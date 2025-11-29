@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Choppa Penchala Praveen — Resume</title>
+<meta name="description" content="Resume / portfolio of Choppa Penchala Praveen — Cybersecurity / CEH" />
+<style>
+  :root{
+    --bg:#f7f7f7; --card:#fff; --muted:#666; --accent:#0b5ed7;
+    --maxw:900px; --pad:20px; --radius:10px; --gap:18px;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color:#111;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%; margin:0; background:var(--bg); -webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw); margin:28px auto; padding:var(--pad)}
+  .card{background:var(--card); padding:22px; border-radius:var(--radius); box-shadow:0 6px 18px rgba(15,15,15,0.06)}
+  header{display:flex; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap}
+  .name{font-size:28px; font-weight:700; letter-spacing:0.2px}
+  .sub{color:var(--muted); font-size:14px}
+  .contact{font-size:14px; color:var(--muted); text-align:right}
+  .two{display:grid; grid-template-columns:1fr 320px; gap:var(--gap); margin-top:18px}
+  @media (max-width:880px){ .two{grid-template-columns:1fr; } .contact{text-align:left}}
+  section{margin-bottom:18px}
+  h2{font-size:16px; margin:0 0 10px 0; border-bottom:1px solid #e6e6e6; padding-bottom:8px}
+  p.lead{margin:0;color:var(--muted);line-height:1.5}
+  ul.clean{margin:0 0 0 18px; padding:0; color:var(--muted)}
+  .skill-list{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px}
+  .chip{background:#f0f6ff;border:1px solid #e6f0ff;padding:6px 10px;border-radius:999px;font-size:13px;color:#05386b}
+  .projects .proj{margin-bottom:12px}
+  .proj-title{font-weight:600; margin:0 0 6px 0}
+  .muted-small{color:var(--muted); font-size:13px}
+  footer{display:flex; justify-content:space-between; gap:10px; align-items:center; flex-wrap:wrap}
+  .download{background:var(--accent); color:#fff; padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:600}
+  @media print{
+    body{background:white}
+    .wrap{box-shadow:none; margin:0}
+    .download, footer{display:none}
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="card">
+      <header>
+        <div>
+          <div class="name">Choppa Penchala Praveen</div>
+          <div class="sub">Cybersecurity | Penetration Testing | Incident Response</div>
+        </div>
+        <div class="contact">
+          <div>Bengaluru, Karnataka</div>
+          <div>+91 86885 98476</div>
+          <div><a href="mailto:penchalapraveen221@gmail.com">penchalapraveen221@gmail.com</a></div>
+        </div>
+      </header>
+
+      <div class="two" style="margin-top:18px">
+        <!-- main column -->
+        <div>
+          <section>
+            <h2>Profile summary</h2>
+            <p class="lead">
+              Certified Ethical Hacker (CEH) fresher with foundational knowledge in penetration testing, vulnerability assessment,
+              and network security. Skilled with Metasploit, Nmap, Burp Suite and vulnerability management tools.
+              Background in Computer Science & Engineering with specialization in AI/ML and a strong analytical approach to security.
+            </p>
+          </section>
+
+          <section>
+            <h2>Key responsibilities & achievements</h2>
+            <ul class="clean">
+              <li>Penetration testing on networks and web applications; vulnerability discovery and exploitation.</li>
+              <li>Used Metasploit, Burp Suite, and Nmap for assessments and exploit validation.</li>
+              <li>Incident investigation, digital forensics and evidence collection for remediation guidance.</li>
+              <li>Performed security audits aligned with ISO 27001, NIST; ensured compliance recommendations.</li>
+            </ul>
+          </section>
+
+          <section class="projects">
+            <h2>Projects</h2>
+
+            <div class="proj">
+              <div class="proj-title">HSBox1 — Web Application Exploitation</div>
+              <div class="muted-small">Objective</div>
+              <p class="lead">Penetration testing on a vulnerable web application (HSBox1) focusing on common web vulnerabilities.</p>
+              <div class="muted-small">Actions taken</div>
+              <ul class="clean">
+                <li>Reconnaissance with Nmap to find open ports and services.</li>
+                <li>Found and exploited SQL Injection in login form using sqlmap to gain unauthorized access.</li>
+                <li>Bypassed authentication via weak file upload, traversed directories to obtain sensitive data (flags).</li>
+              </ul>
+              <div class="muted-small">Outcome</div>
+              <p class="lead">Captured flags and documented remediation strategies to secure web apps against common attack vectors.</p>
+            </div>
+
+            <div class="proj">
+              <div class="proj-title">HSBox2 — Privilege Escalation & Exploitation</div>
+              <div class="muted-small">Objective</div>
+              <p class="lead">Local privilege escalation and exploitation on a Linux-based HSBox2 instance.</p>
+              <div class="muted-small">Actions taken</div>
+              <ul class="clean">
+                <li>Identified misconfigured SUID binaries and exploited them to escalate privileges.</li>
+                <li>Used LinPEAS to discover system weaknesses and obtain higher privileges.</li>
+                <li>Set up reverse shells for post-exploitation and analyzed logs for further vectors.</li>
+              </ul>
+              <div class="muted-small">Outcome</div>
+              <p class="lead">Achieved full system compromise and captured multiple flags, demonstrating effective privilege escalation techniques.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Certifications</h2>
+            <ul class="clean">
+              <li>Certification of Certified Ethical Hacker V13 course completion (EC-Council)</li>
+              <li>Practical Ethical Hacker (TCM Security)</li>
+              <li>Certified Lead Auditor (Iso/IEC 22001)</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- sidebar -->
+        <aside>
+          <section>
+            <h2>Technical skills</h2>
+            <div class="skill-list">
+              <span class="chip">Vulnerability Scanning</span>
+              <span class="chip">Metasploit</span>
+              <span class="chip">Burp Suite</span>
+              <span class="chip">Nmap</span>
+              <span class="chip">Nessus</span>
+              <span class="chip">Wireshark</span>
+              <span class="chip">IDS/IPS</span>
+              <span class="chip">Secure Coding</span>
+              <span class="chip">Incident Response</span>
+            </div>
+          </section>
+
+          <section style="margin-top:12px">
+            <h2>Education</h2>
+            <div style="font-weight:600">SRI VENKATESHWARA COLLEGE OF ENGINEERING</div>
+            <div class="muted-small">Computer Science & Engineering (AI and ML)</div>
+            <div class="muted-small">June 2021 — July 2025</div>
+          </section>
+
+          <section style="margin-top:12px">
+            <h2>Download</h2>
+            <!-- Replace href with actual file path in repo (e.g., resume.pdf) -->
+            <a class="download" href="resume.pdf" download>Download PDF</a>
+            <p class="muted-small" style="margin-top:8px">Upload your `resume.pdf` to the same repo and link it as above.</p>
+          </section>
+        </aside>
+      </div>
+
+      <footer style="margin-top:18px">
+        <div class="muted-small">Resume source: original PDF (pages 1–2). :contentReference[oaicite:1]{index=1}</div>
+        <div class="muted-small">Designed for web & print</div>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
